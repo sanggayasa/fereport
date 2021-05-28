@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\Members;
+use App\Http\Livewire\Fereport;
+use App\Http\Livewire\Detail;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -28,4 +31,5 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
     })->name('dashboard');
 
     Route::get('member', Members::class)->name('member');
+    Route::get('fereport', Fereport::class)->name('fereport');
 });
