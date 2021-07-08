@@ -24,24 +24,5 @@ class Fereport extends Component
         return view('livewire.fereport', $data);
     }
 
-    // public function create()
-    // {
-    //     $this->resetFields();
-    //     $this->openModal();
-    // }
-
-    // public function resetFields()
-    // {
-    //     $this->c_office = '';
-    // }
-
-    // public function openModal()
-    // {
-    //     $this->isModal = true;
-    // }
-
-    // public function closeModal()
-    // {
-    //     $this->isModal = false;
-    // }
+   
 }

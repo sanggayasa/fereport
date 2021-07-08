@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\Members;
 use App\Http\Livewire\Fereport;
-use App\Http\Livewire\Detail;
+use App\Http\Livewire\Createoffice;
 
 
 /*
@@ -32,4 +32,5 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
 
     Route::get('member', Members::class)->name('member');
     Route::get('fereport', Fereport::class)->name('fereport');
+    Route::get('fereport/create', Createoffice::class)->name('createoffice');
 });
