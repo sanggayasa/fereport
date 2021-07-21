@@ -8,6 +8,7 @@ use App\Models\office;
 
 class Fereport extends Component
 {
+
     public $c_office;
     public $isModal;
     public function __construct()
@@ -23,6 +24,4 @@ class Fereport extends Component
         //dd($data);
         return view('livewire.fereport', $data);
     }
-
-   
 }

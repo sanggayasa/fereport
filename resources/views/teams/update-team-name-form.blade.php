@@ -10,6 +10,7 @@
     <x-slot name="form">
         <!-- Team Owner Information -->
         <div class="col-span-6">
+            <h1>INI ASELI</h1>
             <x-jet-label value="{{ __('Team Owner') }}" />
 
             <div class="flex items-center mt-2">
@@ -26,25 +27,21 @@
         <div class="col-span-6 sm:col-span-4">
             <x-jet-label for="name" value="{{ __('Team Name') }}" />
 
-            <x-jet-input id="name"
-                        type="text"
-                        class="mt-1 block w-full"
-                        wire:model.defer="state.name"
-                        :disabled="! Gate::check('update', $team)" />
+            <x-jet-input id="name" type="text" class="mt-1 block w-full" wire:model.defer="state.name" :disabled="! Gate::check('update', $team)" />
 
             <x-jet-input-error for="name" class="mt-2" />
         </div>
     </x-slot>
 
     @if (Gate::check('update', $team))
-        <x-slot name="actions">
-            <x-jet-action-message class="mr-3" on="saved">
-                {{ __('Saved.') }}
-            </x-jet-action-message>
+    <x-slot name="actions">
+        <x-jet-action-message class="mr-3" on="saved">
+            {{ __('Saved.') }}
+        </x-jet-action-message>
 
-            <x-jet-button>
-                {{ __('Save') }}
-            </x-jet-button>
-        </x-slot>
+        <x-jet-button>
+            {{ __('Save') }}
+        </x-jet-button>
+    </x-slot>
     @endif
 </x-jet-form-section>

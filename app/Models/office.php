@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\DB;
 class office extends Model
 {
     //use HasFactory;
+
+    protected $guarded = [];
     public function alldata()
     {
         return DB::table('m_office')->get();

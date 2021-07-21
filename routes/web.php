@@ -3,8 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\Members;
 use App\Http\Livewire\Fereport;
+use App\Http\Livewire\Posts;
 use App\Http\Livewire\Createoffice;
-
+use App\Http\Livewire\FeIndex;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,6 +32,9 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
     })->name('dashboard');
 
     Route::get('member', Members::class)->name('member');
-    Route::get('fereport', Fereport::class)->name('fereport');
-    Route::get('fereport/create', Createoffice::class)->name('createoffice');
+    Route::get('fereport', FeIndex::class)->name('Feindex');
+    Route::get('/posts', Posts::class)->name('posts');
+
+    Route::get('fereport/office', Fereport::class)->name('fereport.office');
+    Route::get('fereport/office/create', Createoffice::class)->name('create');
 });

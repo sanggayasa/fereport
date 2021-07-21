@@ -76,7 +76,7 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Login Screens:</h6>
                         <a class="collapse-item" href=""></a>
-                        <a class="collapse-item" href="{{ route('fereport') }}">DATA office</a>
+                        <a class="collapse-item" href="{{ route('fereport.office') }}">DATA office</a>
                         <a class="collapse-item">Create office</a>
                         <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
                         <div class="collapse-divider"></div>

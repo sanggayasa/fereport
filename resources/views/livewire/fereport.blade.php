@@ -3,14 +3,14 @@
     <div class="container-fluid">
 
         <!-- Page Heading -->
-        <h1 class="h3 mb-2 text-gray-800">Tables</h1>
+        <h1 class="h3 mb-2 text-gray-800"></h1>
         <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the <a target="_blank" href="https://datatables.net">official DataTables documentation</a>.</p>
 
         <!-- DataTales Example -->
         <div class="card shadow mb-4">
             <div class="card-header py-3">
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                    <a href="{{ url('fereport/create') }}">
+                    <a href="{{ url('fereport/office/create') }}">
                         <button type="button" class="btn btn-outline-primary">+ CREATE DATA</button>
                     </a>
                 </div>
